@@ -2,10 +2,6 @@ import SwiftUI
 
 struct StockAverageCalculatorView: View {
     
-    enum Field: Hashable {
-            case myField
-        }
-    
     // State variables to store the input values
     @State private var stockAmount = ""
     @State private var purchasePrice = ""
@@ -112,7 +108,7 @@ struct StockAverageCalculatorView: View {
         textField.resignFirstResponder()
         return true
     }
-
+    
 }
 
 struct StockAverageCalculatorView_Previews: PreviewProvider {
