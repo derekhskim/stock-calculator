@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		653585AA29387CE600F4A835 /* Stock_CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653585A929387CE600F4A835 /* Stock_CalculatorApp.swift */; };
-		653585AC29387CE600F4A835 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653585AB29387CE600F4A835 /* ContentView.swift */; };
+		653585AC29387CE600F4A835 /* StockAverageCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653585AB29387CE600F4A835 /* StockAverageCalculatorView.swift */; };
 		653585AE29387CE700F4A835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 653585AD29387CE700F4A835 /* Assets.xcassets */; };
 		653585B129387CE700F4A835 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 653585B029387CE700F4A835 /* Preview Assets.xcassets */; };
 		653585BB29387CE700F4A835 /* Stock_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653585BA29387CE700F4A835 /* Stock_CalculatorTests.swift */; };
 		653585C529387CE700F4A835 /* Stock_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653585C429387CE700F4A835 /* Stock_CalculatorUITests.swift */; };
 		653585C729387CE700F4A835 /* Stock_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653585C629387CE700F4A835 /* Stock_CalculatorUITestsLaunchTests.swift */; };
+		657B230E294E692A00E0CC9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B230D294E692A00E0CC9D /* ContentView.swift */; };
+		657B2310294E6A2E00E0CC9D /* StockProfitCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B230F294E6A2E00E0CC9D /* StockProfitCalculatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		653585A629387CE600F4A835 /* Stock Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		653585A929387CE600F4A835 /* Stock_CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock_CalculatorApp.swift; sourceTree = "<group>"; };
-		653585AB29387CE600F4A835 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		653585AB29387CE600F4A835 /* StockAverageCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockAverageCalculatorView.swift; sourceTree = "<group>"; };
 		653585AD29387CE700F4A835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		653585B029387CE700F4A835 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		653585B629387CE700F4A835 /* Stock CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stock CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,8 @@
 		653585C029387CE700F4A835 /* Stock CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stock CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		653585C429387CE700F4A835 /* Stock_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock_CalculatorUITests.swift; sourceTree = "<group>"; };
 		653585C629387CE700F4A835 /* Stock_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		657B230D294E692A00E0CC9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		657B230F294E6A2E00E0CC9D /* StockProfitCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockProfitCalculatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +99,11 @@
 			isa = PBXGroup;
 			children = (
 				653585A929387CE600F4A835 /* Stock_CalculatorApp.swift */,
-				653585AB29387CE600F4A835 /* ContentView.swift */,
+				657B230D294E692A00E0CC9D /* ContentView.swift */,
+				653585AB29387CE600F4A835 /* StockAverageCalculatorView.swift */,
 				653585AD29387CE700F4A835 /* Assets.xcassets */,
 				653585AF29387CE700F4A835 /* Preview Content */,
+				657B230F294E6A2E00E0CC9D /* StockProfitCalculatorView.swift */,
 			);
 			path = "Stock Calculator";
 			sourceTree = "<group>";
@@ -257,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				653585AC29387CE600F4A835 /* ContentView.swift in Sources */,
+				653585AC29387CE600F4A835 /* StockAverageCalculatorView.swift in Sources */,
 				653585AA29387CE600F4A835 /* Stock_CalculatorApp.swift in Sources */,
+				657B230E294E692A00E0CC9D /* ContentView.swift in Sources */,
+				657B2310294E6A2E00E0CC9D /* StockProfitCalculatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
