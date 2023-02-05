@@ -69,6 +69,8 @@ struct StockAverageCalculatorView: View {
                         Text("Reset")
                     }
                 }
+                
+                BannerAdView()
             }
             .navigationBarTitle("Stock Calculator")
         }
