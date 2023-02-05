@@ -13,7 +13,7 @@ struct StockAverageCalculatorView: View {
     var body: some View {
         NavigationView {
             Form {
-                Section(header: Text("Add Stock")) {
+                Section(header: Text("Stock Average Calculator")) {
                     // TextField to input the amount of stocks purchased
                     TextField("Amount of stocks purchased", text: $stockAmount)
                         .keyboardType(.decimalPad)
@@ -24,7 +24,7 @@ struct StockAverageCalculatorView: View {
                 // For each set of fields in the stockFields array, create a section with two TextFields
                 ForEach(0..<stockFields.count, id: \.self) { index in
                     Section {
-                        TextField("Amount of stocks purchased", text: self.$stockFields[index][0])
+                        TextField("Number of shares purchased", text: self.$stockFields[index][0])
                             .keyboardType(.decimalPad)
                         TextField("Purchase price", text: self.$stockFields[index][1])
                             .keyboardType(.decimalPad)
@@ -56,8 +56,21 @@ struct StockAverageCalculatorView: View {
                         Text("Average Price: \(calculateAverage(), specifier: "%.2f")")
                     }
                 }
+                
+                // Add a "Reset" button to reset all textfields
+                Section {
+                    Button(action: {
+                        self.showAverage = false
+                        self.stockAmount = ""
+                        self.purchasePrice = ""
+                        self.stockFields = [["", ""]]
+                        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to:nil, from:nil, for:nil)
+                    }) {
+                        Text("Reset")
+                    }
+                }
             }
-            .navigationBarTitle("Stock Average Calculator")
+            .navigationBarTitle("Stock Calculator")
         }
     }
     
@@ -102,7 +115,6 @@ struct StockAverageCalculatorView: View {
         // Calculate and return the average
         return totalPrice / totalAmount
     }
-    
     // Hide numberpad when user taps out of the textfields
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
