@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		1DD0080C6DFF7EDE22425914 /* Pods_Stock_CalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB1C81C52CE5E7EAB6D5DEA /* Pods_Stock_CalculatorTests.framework */; };
 		45C3E23D4A0889BDEC09B737 /* Pods_Stock_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7543F50819DD2BFB36B103 /* Pods_Stock_Calculator.framework */; };
+		6518B62B2990B3680010A8E9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6518B62A2990B3680010A8E9 /* StoreKit.framework */; };
+		6518B62E2990B7CF0010A8E9 /* MyProductIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6518B62D2990B7CF0010A8E9 /* MyProductIdentifiers.swift */; };
+		6518B6302990B80B0010A8E9 /* TipStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6518B62F2990B80B0010A8E9 /* TipStore.swift */; };
+		6518B6322990B9600010A8E9 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6518B6312990B9600010A8E9 /* TipsView.swift */; };
+		6518B6342990B98B0010A8E9 /* TipsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6518B6332990B98B0010A8E9 /* TipsItemView.swift */; };
 		6529E32D2990721F003DD27D /* GoogleMobileAds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529E32C2990721F003DD27D /* GoogleMobileAds.swift */; };
 		653585AA29387CE600F4A835 /* Stock_CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653585A929387CE600F4A835 /* Stock_CalculatorApp.swift */; };
 		653585AC29387CE600F4A835 /* StockAverageCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653585AB29387CE600F4A835 /* StockAverageCalculatorView.swift */; };
@@ -42,6 +47,12 @@
 /* Begin PBXFileReference section */
 		3BB1C81C52CE5E7EAB6D5DEA /* Pods_Stock_CalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stock_CalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E04774186DDAAF02D30E33C /* Pods-Stock Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock Calculator.release.xcconfig"; path = "Target Support Files/Pods-Stock Calculator/Pods-Stock Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		6518B62A2990B3680010A8E9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		6518B62C2990B3CC0010A8E9 /* MyTipsStoreKitConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyTipsStoreKitConfiguration.storekit; sourceTree = "<group>"; };
+		6518B62D2990B7CF0010A8E9 /* MyProductIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProductIdentifiers.swift; sourceTree = "<group>"; };
+		6518B62F2990B80B0010A8E9 /* TipStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipStore.swift; sourceTree = "<group>"; };
+		6518B6312990B9600010A8E9 /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
+		6518B6332990B98B0010A8E9 /* TipsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsItemView.swift; sourceTree = "<group>"; };
 		6529E32C2990721F003DD27D /* GoogleMobileAds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMobileAds.swift; sourceTree = "<group>"; };
 		653585A629387CE600F4A835 /* Stock Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		653585A929387CE600F4A835 /* Stock_CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock_CalculatorApp.swift; sourceTree = "<group>"; };
@@ -71,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45C3E23D4A0889BDEC09B737 /* Pods_Stock_Calculator.framework in Frameworks */,
+				6518B62B2990B3680010A8E9 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,8 +145,13 @@
 			children = (
 				65E5CC41299074BC008B7B44 /* Stock-Calculator-Info.plist */,
 				653585A929387CE600F4A835 /* Stock_CalculatorApp.swift */,
+				6518B62F2990B80B0010A8E9 /* TipStore.swift */,
+				6518B6312990B9600010A8E9 /* TipsView.swift */,
+				6518B6332990B98B0010A8E9 /* TipsItemView.swift */,
 				657B230D294E692A00E0CC9D /* ContentView.swift */,
 				653585AB29387CE600F4A835 /* StockAverageCalculatorView.swift */,
+				6518B62C2990B3CC0010A8E9 /* MyTipsStoreKitConfiguration.storekit */,
+				6518B62D2990B7CF0010A8E9 /* MyProductIdentifiers.swift */,
 				657B230F294E6A2E00E0CC9D /* StockProfitCalculatorView.swift */,
 				653585AD29387CE700F4A835 /* Assets.xcassets */,
 				653585AF29387CE700F4A835 /* Preview Content */,
@@ -171,6 +188,7 @@
 		DFF01A07812C54B0DD9A00D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6518B62A2990B3680010A8E9 /* StoreKit.framework */,
 				6C7543F50819DD2BFB36B103 /* Pods_Stock_Calculator.framework */,
 				DA431A6F76B6A050550EF242 /* Pods_Stock_Calculator_Stock_CalculatorUITests.framework */,
 				3BB1C81C52CE5E7EAB6D5DEA /* Pods_Stock_CalculatorTests.framework */,
@@ -416,11 +434,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6518B6342990B98B0010A8E9 /* TipsItemView.swift in Sources */,
 				653585AC29387CE600F4A835 /* StockAverageCalculatorView.swift in Sources */,
 				653585AA29387CE600F4A835 /* Stock_CalculatorApp.swift in Sources */,
 				657B230E294E692A00E0CC9D /* ContentView.swift in Sources */,
 				6529E32D2990721F003DD27D /* GoogleMobileAds.swift in Sources */,
+				6518B6322990B9600010A8E9 /* TipsView.swift in Sources */,
+				6518B62E2990B7CF0010A8E9 /* MyProductIdentifiers.swift in Sources */,
 				657B2310294E6A2E00E0CC9D /* StockProfitCalculatorView.swift in Sources */,
+				6518B6302990B80B0010A8E9 /* TipStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

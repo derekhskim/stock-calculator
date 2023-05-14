@@ -6,6 +6,8 @@ struct StockAverageCalculatorView: View {
     @State private var stockAmount = ""
     @State private var purchasePrice = ""
     @State private var stockFields: [[String]] = [["", ""]]
+    @State private var showTips = false
+    @StateObject private var store = TipStore()
     
     // State variable to toggle the visibility of the average section
     @State private var showAverage = false
@@ -69,11 +71,38 @@ struct StockAverageCalculatorView: View {
                         Text("Reset")
                     }
                 }
-                
                 BannerAdView()
             }
             .navigationBarTitle("Stock Calculator")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        showTips.toggle()
+                    }) {
+                        Text("Tip Me")
+                    }
+                    .tint(.blue)
+                    .buttonStyle(.bordered)
+                }
+            }
         }
+        .overlay {
+            if showTips {
+                Color.black.opacity(0.8)
+                    .ignoresSafeArea()
+                    .transition(.opacity)
+                    .onTapGesture {
+                        showTips.toggle()
+                    }
+                TipsView {
+                    showTips.toggle()
+                }
+                .environmentObject(store)
+                .transition(.move(edge: .bottom).combined(with: .opacity))
+            }
+        }
+        .animation(.spring(), value: showTips)
+        
     }
     
     // Calculate the total amount of stocks

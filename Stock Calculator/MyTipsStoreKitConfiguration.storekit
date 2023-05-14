@@ -1,0 +1,79 @@
+{
+  "identifier" : "04A298E8",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "0381BDA5",
+      "localizations" : [
+        {
+          "description" : "Buy me something from a 💲store",
+          "displayName" : "Donate a dollar",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "derekkim.tinyTip",
+      "referenceName" : "Tiny Tip",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "3.99",
+      "familyShareable" : false,
+      "internalID" : "2E95E6A4",
+      "localizations" : [
+        {
+          "description" : "Buy me something from ☕ shop",
+          "displayName" : "Donate a cup of coffee",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "derekkim.smallTip",
+      "referenceName" : "Small Tip",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "5.99",
+      "familyShareable" : false,
+      "internalID" : "7817071E",
+      "localizations" : [
+        {
+          "description" : "Buy me a 🧋",
+          "displayName" : "Donate a cup of boba",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "derekkim.mediumTip",
+      "referenceName" : "Medium Tip",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "19.99",
+      "familyShareable" : false,
+      "internalID" : "F49D681C",
+      "localizations" : [
+        {
+          "description" : "Donate a Pizza",
+          "displayName" : "Buy me a Dinner 🍕",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "derekkim.largeTip",
+      "referenceName" : "Large Tip",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_locale" : "en_CA",
+    "_storefront" : "CAN"
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}
