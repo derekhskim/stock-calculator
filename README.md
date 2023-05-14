@@ -1,2 +1,2 @@
-# stock-calculator-ios
+# stock-calculator-SwiftUI
 Stock Average Price &amp; Profit Calculator
