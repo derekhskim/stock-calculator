@@ -45,7 +45,7 @@ struct StockProfitCalculatorView: View {
                         Text("Reset")
                     }
                 }
-                BannerAdView()
+//                BannerAdView()
             }
             .navigationBarTitle("Stock Calculator")
         }

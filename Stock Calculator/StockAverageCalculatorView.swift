@@ -71,7 +71,7 @@ struct StockAverageCalculatorView: View {
                         Text("Reset")
                     }
                 }
-                BannerAdView()
+//                BannerAdView()
             }
             .navigationBarTitle("Stock Calculator")
             .toolbar {

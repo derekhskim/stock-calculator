@@ -44,11 +44,11 @@ struct TipsView: View {
         .background(Color("card-background"), in: RoundedRectangle(cornerRadius: 10, style: .continuous))
         .padding(8)
         .overlay(alignment: .top) {
-            Image("logo")
+            Image("nb_char")
                 .resizable()
                 .frame(width: 50, height: 50)
                 .padding(6)
-                .background(Color.accentColor, in: RoundedRectangle(cornerRadius: 10, style: .continuous))
+                .background(Color.white, in: RoundedRectangle(cornerRadius: 10, style: .continuous))
                 .offset(y: -25)
         }
     }
