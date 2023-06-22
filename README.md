@@ -1,6 +1,3 @@
-# stock-calculator-SwiftUI
-Stock Average Price &amp; Profit Calculator
-
 ## Stock Calculator
 ### A simple stock calculator built using SwiftUI. This calculator provides a native user interface and does not use any custom views, making it lightweight and easy to use.
 
